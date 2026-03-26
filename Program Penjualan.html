@@ -1,0 +1,32 @@
+<form name=form>
+<script>
+function HITUNG()
+{
+	var harga=document.form.harga.value;
+	var jumlah=document.form.jumlah.value;
+	var totalharga=(parseInt(harga) * parseInt(jumlah));
+	var pajak=(totalharga/10);
+	var bayar=totalharga + pajak;
+	document.form.totalharga.value=totalharga;
+	document.form.pajak.value=pajak;
+	document.form.bayar.value=bayar;
+}
+</script>	
+
+<html>
+<center>
+<h1>PROGRAM PENJUALAN
+<hr>
+<table>
+<tr><td> NAMA BARANG <td>:<input name=namabarang size=20>
+<tr><td> HARGA <td>:<input name=harga size=20>
+<tr><td> JUMLAH <td>:<input name=jumlah size=20>
+<tr><td colspan=2><hr>
+<tr><td> TOTAL HARGA <td>:<input name=totalharga size=20>
+<tr><td> PAJAK 10% <td>:<input name=pajak size=20>
+<tr><td> BAYAR <td>:<input name=bayar size=20>
+</table>
+<hr>
+<input type=button value="HITUNG"onclick="HITUNG ()">
+
+</html>

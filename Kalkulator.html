@@ -1,0 +1,56 @@
+<form name=form>
+<script>
+function kali()
+{
+	var a=document.form.a.value;
+	var b=document.form.b.value;
+	var c=(a*b);
+	document.form.c.value=c;
+}
+function bagi()
+{
+		var a=document.form.a.value;
+		var b=document.form.b.value;
+		var c=(a/b);
+		document.form.c.value=c;
+}
+function tambah()
+{
+			var a=document.form.a.value;
+			var b=document.form.b.value;
+			var c= parseInt(a) + parseInt(b);
+			document.form.c.value=c;
+}
+function kurang()
+{
+				var a=document.form.a.value;
+				var b=document.form.b.value;
+				var c= parseInt(a) - parseInt(b);
+				document.form.c.value=c;
+}
+function reset()
+{
+			var c = 0
+}
+
+</script>
+<html>
+<center>
+<h1>PROGRAM KALKULATOR
+<hr>
+<table>
+<tr><td> A <td>:<input name=a size=5>
+<tr><td> B <td>:<input name=b size=5>
+<tr><td colspan=2><hr>
+<tr><td> C <td>:<input name=c size=5>
+</table>
+<hr>
+<input type=button value="kali"onclick="kali()">
+<input type=button value="bagi"onclick="bagi()">
+<input type=button value="tambah"onclick="tambah ()">
+<input type=button value="kurang"onclick="kurang ()">
+
+<input type=button value="reset"onclick="reset ()">
+
+
+</html>
